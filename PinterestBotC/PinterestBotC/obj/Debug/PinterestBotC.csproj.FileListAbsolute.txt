@@ -26,3 +26,4 @@ C:\Users\rguluarte\Documents\Visual Studio 2013\Projects\PinterestBotC\Pinterest
 C:\Users\rguluarte\Documents\Visual Studio 2013\Projects\PinterestBotC\PinterestBotC\PinterestBotC\bin\Debug\HtmlAgilityPack.dll
 C:\Users\rguluarte\Documents\Visual Studio 2013\Projects\PinterestBotC\PinterestBotC\PinterestBotC\bin\Debug\HtmlAgilityPack.pdb
 C:\Users\rguluarte\Documents\Visual Studio 2013\Projects\PinterestBotC\PinterestBotC\PinterestBotC\bin\Debug\HtmlAgilityPack.xml
+C:\Users\rguluarte\Documents\Visual Studio 2013\Projects\PinterestBotC\PinterestBotC\PinterestBotC\bin\Debug\Images\Test.png

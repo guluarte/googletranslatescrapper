@@ -1,0 +1,16 @@
+C:\Users\rguluarte\Documents\Visual Studio 2013\Projects\PinterestBotC\PinterestBotC\PinterestBotC\bin\Release\PinterestBotC.exe.config
+C:\Users\rguluarte\Documents\Visual Studio 2013\Projects\PinterestBotC\PinterestBotC\PinterestBotC\bin\Release\Images\Test.png
+C:\Users\rguluarte\Documents\Visual Studio 2013\Projects\PinterestBotC\PinterestBotC\PinterestBotC\bin\Release\PinterestBotC.exe
+C:\Users\rguluarte\Documents\Visual Studio 2013\Projects\PinterestBotC\PinterestBotC\PinterestBotC\bin\Release\PinterestBotC.pdb
+C:\Users\rguluarte\Documents\Visual Studio 2013\Projects\PinterestBotC\PinterestBotC\PinterestBotC\bin\Release\Geckofx-Core.dll
+C:\Users\rguluarte\Documents\Visual Studio 2013\Projects\PinterestBotC\PinterestBotC\PinterestBotC\bin\Release\Geckofx-Winforms.dll
+C:\Users\rguluarte\Documents\Visual Studio 2013\Projects\PinterestBotC\PinterestBotC\PinterestBotC\bin\Release\HtmlAgilityPack.dll
+C:\Users\rguluarte\Documents\Visual Studio 2013\Projects\PinterestBotC\PinterestBotC\PinterestBotC\bin\Release\Geckofx-Core.pdb
+C:\Users\rguluarte\Documents\Visual Studio 2013\Projects\PinterestBotC\PinterestBotC\PinterestBotC\bin\Release\Geckofx-Winforms.pdb
+C:\Users\rguluarte\Documents\Visual Studio 2013\Projects\PinterestBotC\PinterestBotC\PinterestBotC\bin\Release\HtmlAgilityPack.pdb
+C:\Users\rguluarte\Documents\Visual Studio 2013\Projects\PinterestBotC\PinterestBotC\PinterestBotC\bin\Release\HtmlAgilityPack.xml
+C:\Users\rguluarte\Documents\Visual Studio 2013\Projects\PinterestBotC\PinterestBotC\PinterestBotC\obj\Release\PinterestBotC.Form1.resources
+C:\Users\rguluarte\Documents\Visual Studio 2013\Projects\PinterestBotC\PinterestBotC\PinterestBotC\obj\Release\PinterestBotC.Properties.Resources.resources
+C:\Users\rguluarte\Documents\Visual Studio 2013\Projects\PinterestBotC\PinterestBotC\PinterestBotC\obj\Release\PinterestBotC.csproj.GenerateResource.Cache
+C:\Users\rguluarte\Documents\Visual Studio 2013\Projects\PinterestBotC\PinterestBotC\PinterestBotC\obj\Release\PinterestBotC.exe
+C:\Users\rguluarte\Documents\Visual Studio 2013\Projects\PinterestBotC\PinterestBotC\PinterestBotC\obj\Release\PinterestBotC.pdb
