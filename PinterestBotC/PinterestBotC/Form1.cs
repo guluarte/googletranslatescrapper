@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -256,6 +258,65 @@ namespace PinterestBotC
             }
 
             return word;
+        }
+        private void btnCapture_Click(object sender, EventArgs e)
+        {
+            using (StringReader sr = new StringReader(txtText.Text))
+            {
+                string line;
+                while ((line = sr.ReadLine()) != null)
+                {
+                    line = line.ToLower();
+
+                    if (!wordsToScrap.Contains(line) && !string.IsNullOrWhiteSpace(line))
+                    {
+                        wordsToScrap.Enqueue(line);
+
+                        var words = GetWords(line);
+
+                        foreach (var word in words)
+                        {
+                            var normalizedWord = word.ToLower().Replace("qqoottee", "'");
+                            if (!wordsToScrap.Contains(normalizedWord))
+                            {
+                                wordsToScrap.Enqueue(normalizedWord);
+                            }
+                        }
+
+                    }
+                }//while
+
+            }//using
+
+            while (wordsToScrap.Count > 0)
+            {
+                currentWord = wordsToScrap.Peek();
+                toolStripStatusLabel.Text = String.Format("Fetching {0}", currentWord);
+                isGeckoFetching = true;
+                
+                geckoWebBrowser.DocumentCompleted += geckoBrowser_GoogleImages;
+                var url = String.Format("https://www.google.fr/search?q={0}&biw=1280&bih=911&source=lnms&tbm=isch&sa=X", HttpUtility.UrlEncode(currentWord));
+                geckoWebBrowser.Navigate(url);
+
+                while (isGeckoFetching)
+                {
+                    Application.DoEvents();
+                }
+
+                wordsToScrap.Dequeue();
+            }
+
+            MessageBox.Show("Done");
+        }
+
+        private void geckoBrowser_GoogleImages(object sender, GeckoDocumentCompletedEventArgs e)
+        {
+            System.Drawing.Bitmap bmp = new System.Drawing.Bitmap(geckoWebBrowser.Width, geckoWebBrowser.Height);
+            geckoWebBrowser.DrawToBitmap(bmp, geckoWebBrowser.Bounds);
+
+            bmp.Save(string.Format("Images/{0}.png", currentWord));
+
+            isGeckoFetching = false;
         }
     }
 }

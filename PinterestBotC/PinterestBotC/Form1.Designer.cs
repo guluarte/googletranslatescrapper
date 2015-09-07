@@ -33,6 +33,7 @@
             this.geckoWebBrowser = new Gecko.GeckoWebBrowser();
             this.btnStart = new System.Windows.Forms.Button();
             this.txtText = new System.Windows.Forms.TextBox();
+            this.btnCapture = new System.Windows.Forms.Button();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,15 +58,15 @@
             this.geckoWebBrowser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.geckoWebBrowser.Location = new System.Drawing.Point(0, 331);
+            this.geckoWebBrowser.Location = new System.Drawing.Point(173, 4);
             this.geckoWebBrowser.Name = "geckoWebBrowser";
-            this.geckoWebBrowser.Size = new System.Drawing.Size(784, 230);
+            this.geckoWebBrowser.Size = new System.Drawing.Size(611, 557);
             this.geckoWebBrowser.TabIndex = 2;
             this.geckoWebBrowser.UseHttpActivityObserver = false;
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(697, 302);
+            this.btnStart.Location = new System.Drawing.Point(89, 538);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 3;
@@ -78,14 +79,26 @@
             this.txtText.Location = new System.Drawing.Point(13, 13);
             this.txtText.Multiline = true;
             this.txtText.Name = "txtText";
-            this.txtText.Size = new System.Drawing.Size(759, 283);
+            this.txtText.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtText.Size = new System.Drawing.Size(151, 519);
             this.txtText.TabIndex = 4;
+            // 
+            // btnCapture
+            // 
+            this.btnCapture.Location = new System.Drawing.Point(0, 538);
+            this.btnCapture.Name = "btnCapture";
+            this.btnCapture.Size = new System.Drawing.Size(75, 23);
+            this.btnCapture.TabIndex = 5;
+            this.btnCapture.Text = "Capture";
+            this.btnCapture.UseVisualStyleBackColor = true;
+            this.btnCapture.Click += new System.EventHandler(this.btnCapture_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 586);
+            this.Controls.Add(this.btnCapture);
             this.Controls.Add(this.txtText);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.geckoWebBrowser);
@@ -108,6 +121,7 @@
         private Gecko.GeckoWebBrowser geckoWebBrowser;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.TextBox txtText;
+        private System.Windows.Forms.Button btnCapture;
     }
 }
 
