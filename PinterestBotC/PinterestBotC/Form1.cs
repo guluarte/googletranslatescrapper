@@ -298,7 +298,7 @@ namespace PinterestBotC
                 isGeckoFetching = true;
                 
                 geckoWebBrowser.DocumentCompleted += geckoBrowser_GoogleImages;
-                var url = String.Format("https://www.google.fr/search?q={0}&biw=1280&bih=911&source=lnms&tbm=isch&sa=X", HttpUtility.UrlEncode(currentWord));
+                var url = String.Format("https://www.google.fr/search?q={0}&biw=1280&bih=911&source=lnms&tbm=isch&sa=X", HttpUtility.UrlEncode("vocabulaire " + currentWord));
                 geckoWebBrowser.Navigate(url);
 
                 while (isGeckoFetching)
