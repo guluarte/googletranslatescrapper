@@ -314,10 +314,17 @@ namespace PinterestBotC
 
         private void geckoBrowser_GoogleImages(object sender, GeckoDocumentCompletedEventArgs e)
         {
-            System.Drawing.Bitmap bmp = new System.Drawing.Bitmap(geckoWebBrowser.Width, geckoWebBrowser.Height);
-            geckoWebBrowser.DrawToBitmap(bmp, geckoWebBrowser.Bounds);
+            try
+            {
+                System.Drawing.Bitmap bmp = new System.Drawing.Bitmap(geckoWebBrowser.Width, geckoWebBrowser.Height);
+                geckoWebBrowser.DrawToBitmap(bmp, geckoWebBrowser.Bounds);
 
-            bmp.Save(string.Format("Images/{0}.png", currentWord.Replace('/', '-')));
+                bmp.Save(string.Format("Images/{0}.png", currentWord.Replace('/', '-')));
+            }
+            catch
+            {
+                // do nothirng
+            }
 
             isGeckoFetching = false;
         }
