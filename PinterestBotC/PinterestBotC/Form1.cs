@@ -317,7 +317,7 @@ namespace PinterestBotC
             System.Drawing.Bitmap bmp = new System.Drawing.Bitmap(geckoWebBrowser.Width, geckoWebBrowser.Height);
             geckoWebBrowser.DrawToBitmap(bmp, geckoWebBrowser.Bounds);
 
-            bmp.Save(string.Format("Images/{0}.png", currentWord));
+            bmp.Save(string.Format("Images/{0}.png", currentWord.Replace('/', '-')));
 
             isGeckoFetching = false;
         }
