@@ -34,6 +34,7 @@
             this.btnStart = new System.Windows.Forms.Button();
             this.txtText = new System.Windows.Forms.TextBox();
             this.btnCapture = new System.Windows.Forms.Button();
+            this.chkWords = new System.Windows.Forms.CheckBox();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,7 +81,7 @@
             this.txtText.Multiline = true;
             this.txtText.Name = "txtText";
             this.txtText.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtText.Size = new System.Drawing.Size(151, 519);
+            this.txtText.Size = new System.Drawing.Size(151, 481);
             this.txtText.TabIndex = 4;
             // 
             // btnCapture
@@ -93,11 +94,22 @@
             this.btnCapture.UseVisualStyleBackColor = true;
             this.btnCapture.Click += new System.EventHandler(this.btnCapture_Click);
             // 
+            // chkWords
+            // 
+            this.chkWords.AutoSize = true;
+            this.chkWords.Location = new System.Drawing.Point(12, 515);
+            this.chkWords.Name = "chkWords";
+            this.chkWords.Size = new System.Drawing.Size(75, 17);
+            this.chkWords.TabIndex = 6;
+            this.chkWords.Text = "Words too";
+            this.chkWords.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 586);
+            this.Controls.Add(this.chkWords);
             this.Controls.Add(this.btnCapture);
             this.Controls.Add(this.txtText);
             this.Controls.Add(this.btnStart);
@@ -122,6 +134,7 @@
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.TextBox txtText;
         private System.Windows.Forms.Button btnCapture;
+        private System.Windows.Forms.CheckBox chkWords;
     }
 }
 

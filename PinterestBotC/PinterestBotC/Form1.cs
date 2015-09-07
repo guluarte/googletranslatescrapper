@@ -272,14 +272,17 @@ namespace PinterestBotC
                     {
                         wordsToScrap.Enqueue(line);
 
-                        var words = GetWords(line);
-
-                        foreach (var word in words)
+                        if (chkWords.Checked)
                         {
-                            var normalizedWord = word.ToLower().Replace("qqoottee", "'");
-                            if (!wordsToScrap.Contains(normalizedWord))
+                            var words = GetWords(line);
+
+                            foreach (var word in words)
                             {
-                                wordsToScrap.Enqueue(normalizedWord);
+                                var normalizedWord = word.ToLower().Replace("qqoottee", "'");
+                                if (!wordsToScrap.Contains(normalizedWord))
+                                {
+                                    wordsToScrap.Enqueue(normalizedWord);
+                                }
                             }
                         }
 
